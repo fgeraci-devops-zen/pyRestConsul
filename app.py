@@ -11,6 +11,7 @@ def home():
     # Register Service
     c.agent.service.register('pyRestNoSwarm',
                              service_id='pyRestNoSwarm',
+                             address='192.168.1.2',
                              port=5000,
                              tags=[])
     print(c.agent.services())
