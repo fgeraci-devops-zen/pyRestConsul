@@ -14,13 +14,14 @@ def home():
                              address='192.168.1.2',
                              port=5001,
                              tags=[])
+    print("Let's see if - pyRestNoSwarm - I'm on Consul => ")
     print(c.agent.services())
     # List all registered Services
     for x in c.agent.services():
         print(x)
         # To remove the service entry
-        # c.agent.service.deregister(service_id='my_http_service_1')
-    return "Ok, ci sono. Meet me @ port #5000"
+        # c.agent.service.deregister(service_id='pyRestNoSwarm')
+    return "Ok, ci sono. Meet me @ port #5001"
 
 home()
 app.run(host='0.0.0.0', port=5001)
