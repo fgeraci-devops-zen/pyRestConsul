@@ -6,11 +6,12 @@ app = Flask(__name__)
 @app.route('/')
 
 def home():
-    c = consul.Consul(host='192.168.1.2')
+    consulhost = input("Input consul address")
+    c = consul.Consul(host=consulhost)
 
     # Register Service
     c.agent.service.register('pyRestNoSwarm',
-                             service_id='pyRestNoSwarm',
+                             service_id=consulhost,
                              address='192.168.1.2',
                              port=5001,
                              tags=[])
