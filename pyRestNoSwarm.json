@@ -1,0 +1,17 @@
+[
+    {
+        "Address": "127.0.0.1",
+        "CreateIndex": 228,
+        "ModifyIndex": 228,
+        "Node": "5850e024061f",
+        "ServiceAddress": "",
+        "ServiceEnableTagOverride": false,
+        "ServiceID": "my_http_service_1",
+        "ServiceName": "pyRestNoSwarm",
+        "ServicePort": 5000,
+        "ServiceTags": [
+            "mytag1",
+            "mytag2"
+        ]
+    }
+]
