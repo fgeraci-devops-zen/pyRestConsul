@@ -1,2 +1,2 @@
 # pyRest
-Restful with Python
+Restful with Python + Consul Registration
