@@ -7,12 +7,12 @@ app = Flask(__name__)
 
 def home():
 
-    c = consul.Consul(host='172.31.47.126')
+    c = consul.Consul(host='52.211.112.202')
 
     # Register Service
     c.agent.service.register('pyRestNoSwarm',
                              service_id='pyRestNoSwarm',
-                             address='172.31.47.126',
+                             address='172.31.24.156',
                              port=5001,
                              tags=[])
     print("Let's see if - pyRestNoSwarm - I'm on Consul => ")
